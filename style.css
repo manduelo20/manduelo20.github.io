@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+.{
+	margin:0px;
+	padding: 0px;
+	font-family:arial,sans-serif;
+}
+nav ul{
+	list-style-type:none;
+	background-color: white;
+	height:50px;
+		margin-top:-20px;
+	margin-left:-5px;
+
+}
+nav li{
+	display: inline-block;
+	width: 23%;
+	text-align: center;
+	margin: 0px;
+	font:normal 1px arial;
+	font-size: 4%;
+	font-weight: bold;
+	border-radius: 10px;
+	
+}
+nav ul:after{
+	content: "";
+	display: table;
+	clear: both;
+	
+}
+nav{
+	height: 50%;
+	width: 90%;
+	margin: 0px;
+	position:absolute;
+	top: 0px;
+
+}
+nav a{
+	display: black;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 10px 0px;
+	border-radius: 25px;
+	border-bottom-color: darkcyan;
+	
+}
+nav a:hover{
+	color: blueviolet;
+	border-bottom: 2px solid gold;
+	
+}
+.overlay2{
+	background-color: rgba(0,0,0,0.4);
+	color: #fff;
+	height: 80px;
+	width: 130px;
+	text-align: center;
+	padding: 0px;
+	position: absolute;
+	margin: 65px 70px;
+	display: inline;
+}
+.button1{
+	background: rgb(255, 224, 15);
+	border-radius: 3px;
+	padding: 6px 10px;
+}
+.button1:hover{
+	background: #02b8dd;
+}
+
+
+.j{
+	position: absolute;
+	top:300px;
+	left:18%;
+	font-family:bahnschrift semibold;
+  font-size:16px;
+	
+}
+.f{
+	border-radius: 50%;
+}
+#jm{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50%;
+	width: 50%;
+	margin-left: 25%;
+	
+}
+.a{
+	
+	font-size: 25px;
+	font-family:;
+}
+#apropos{
+	position: absolute;
+	top:370px;
+	left:90px;
+	font-family:candara;
+  font-size:16px;
+	text-align: center;
+	font-weight: bold;
+	
+	
+	
+}
+	
+.c:hover{
+	background-color: #B18C20;
+	color:#7B1B80;
+	cursor:pointer;
+	
+}
+
+a{
+	font-family:arial;
+	font-size: 12px;
+	text-decoration: none;
+	color: black;
+		
+}
+progress{
+	width: 400px;
+	height: 11px;
+}
+.copyright{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #B3B3B3;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: lighter;
+	border-top-width: 2px;
+}
+.button{
+	width: 140px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border:outset 2px black ;
+	color:white;
+	transition: all 0.3s linear;
+}
+.button:hover{
+	background-color: #B18C20;
+	color:#7B1B80;
+	cursor:pointer;
+}
+footer{
+	background-color: #6A6262;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+/*pour ordinateur*/
+@media (min-width:768px)and (max-width:1096px){
+	.text_column{
+		width: 100%;
+	}
+	.thumbnail{
+		width: 48%;
+	}
+	.text_column{
+		width: 90%;
+		margin: 0%;
+		padding: 20%;
+	}
+	.intro .column p{
+		width: 80%;
+	}
+}
+/*petit tablette*/
+@media (min-width:321px)and (max-width:767px){
+	#menu{
+		height:600px;
+		background-color:1px solid red;
+	}
+	.logo{
+		width: 100%;
+		text-align: center;
+		margin-top: 13%;
+		margin-right: 0%;
+		margin-left: 0%;
+		margin-bottom: 0%;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	.text_column{
+		width: 100%;
+		text-align:justify;
+		padding: 0;
+	}
+	.intro .column p {
+		width: 80%;
+		margin-left: 0px;
+		
+	}
+	.text_column{
+		padding-left: 20px;
+	}
+	.thumbnail{
+		width: 100%;
+	}
+	
+}
+/*mobile*/
+@media (max-width:320px){
+	.logo{
+		width: 100%;
+		text-align: center;
+		margin-top: 13%;
+		margin-right: 0%;
+		margin-left: 0%;
+		margin-bottom: 0%;
+	}
+
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	.text_column{
+		width: 100%;
+		text-align:justify;
+		padding: 0;
+	}
+	.intro .column p {
+		width: 80%;
+		margin-left: 0px;
+	}
+	.text_column{
+		padding-left: 0px;
+	}
+	.thumbnail{
+		width: 100%;
+	}
+	
+}
+#hold_image{
+	display: inline-block;
+	white-space: nowrap;
+}
+#icon_left{
+	right: 20;
+	cursor: pointer;
+	margin-top: -200px;
+	position: fixed;
+}
+#icon_right{
+	right: 20;
+	cursor: pointer;
+	margin-top: -200px;
+	position: fixed;
+}
+.transition{
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	transform:scale(1.2);
+}
+img{
+	-webkit-transform:all .4s ease-in-out;
+	-moz-transform:all .4s ease-in-out;
+	-o-transform:all .4s ease-in-out;
+	transform:all .4s ease-in-out;
+}
